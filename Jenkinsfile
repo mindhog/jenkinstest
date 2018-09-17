@@ -3,7 +3,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                sh '''
+                    sleep 1
+                    echo your mom
+                    mvn --version
+                '''
             }
         }
     }
